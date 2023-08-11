@@ -1,4 +1,4 @@
-import { Component, Input, EventEmitter } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'panini',
@@ -7,7 +7,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
 })
 export class PostComponent {
   @Input('bubba') postImg = ''; 
-  imgSelected = new EventEmitter<string>();
+  @Output() imgSelected = new EventEmitter<string>();
 }
 
 //se non smettevo nulla dentro al posto di bubba nel componente padre avrei dovuto usare 'postImg' nel foglio html
