@@ -1,6 +1,8 @@
 <input (keyup)="changeImage($event)">
 
 <p>{{ title.toUpperCase() }} + {{getName()}} app is running!</p>
+<p>{{ title | titlecase }}</p>
+<p>{{ title}}</p>
 
 <panini [bubba]="doggo" (imgSelected)="logImg($event)">
     <p>Some crazy shish</p>
