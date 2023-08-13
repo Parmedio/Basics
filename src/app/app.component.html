@@ -8,7 +8,11 @@
 </ng-template>
 <p *ngIf="blueClass">All fresh want her, let's go!'</p>
 <hr>
+<panini *ngFor="let image of images" [bubba]="image"></panini>
 
+<img *ngFor="let image of images; let i = index" [src]="image" [ngStyle]="{ 'height.px': 100 + i*10, 'width.px': 100 + i*10}">
+
+<hr>
 <input (keyup)="changeImage($event)">
 
 <p>{{ title.toUpperCase() }} + {{getName()}} app is running!</p>
