@@ -1,6 +1,12 @@
+
 <button (click)="blueClass = !blueClass">press that</button>
 <p (click)="toggleBlueClass()" [ngClass]="{blue : blueClass}">toggling hard in the paint</p>
 <button [ngStyle]="{ 'font-size.px': fontSize, 'color': 'red'}">make america great again</button>
+
+<ng-template [ngIf]="blueClass">
+    <p>The content is crippin'</p>
+</ng-template>
+<p *ngIf="blueClass">All fresh want her, let's go!'</p>
 <hr>
 
 <input (keyup)="changeImage($event)">
