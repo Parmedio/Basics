@@ -12,6 +12,14 @@ export class AppComponent {
   currentDate = new Date();
   cost = 5000;
   temperature = 23.7;
+
+  blueClass: boolean = false;
+  
+  toggleBlueClass(){
+    this.blueClass = !this.blueClass;
+    console.log('hai cliccato per cambiare colore (applicare una classe di stile ad un elemento HTML)!')
+  }
+
   pizza = {
     toppings: ['pepperoni', 'bacon'],
     size: 'large'
