@@ -12,6 +12,10 @@ export class AppComponent {
   currentDate = new Date();
   cost = 5000;
   temperature = 23.7;
+  pizza = {
+    toppings: ['pepperoni', 'bacon'],
+    size: 'large'
+  }
 
   getName = () => {
     return "Crema solare";
