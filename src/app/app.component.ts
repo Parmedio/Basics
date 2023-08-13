@@ -14,6 +14,7 @@ export class AppComponent {
   temperature = 23.7;
 
   blueClass: boolean = false;
+  fontSize: number = 16;
   
   toggleBlueClass(){
     this.blueClass = !this.blueClass;

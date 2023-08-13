@@ -1,5 +1,6 @@
-<p (click)="toggleBlueClass()" [ngClass]="{blue : blueClass}">toggling hard in the paint</p>
 <button (click)="blueClass = !blueClass">press that</button>
+<p (click)="toggleBlueClass()" [ngClass]="{blue : blueClass}">toggling hard in the paint</p>
+<button [ngStyle]="{ 'font-size.px': fontSize, 'color': 'red'}">make america great again</button>
 <hr>
 
 <input (keyup)="changeImage($event)">
@@ -22,4 +23,3 @@
 <p>current TEMPERATURE is {{temperature | number: '1.0-0'}}</p>
 
 <pre>{{pizza | json}}</pre>
-
