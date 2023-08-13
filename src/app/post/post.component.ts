@@ -7,7 +7,9 @@ import { Component, Input, EventEmitter, Output, OnInit, OnChanges, DoCheck, Aft
 })
 export class PostComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   @Input('bubba') postImg = ''; 
+  @Input() costoso: number = 0;
   @Output() imgSelected = new EventEmitter<string>();
+  
   
   constructor () {
     console.log("-------- PostComponent called constructor()", this.postImg);

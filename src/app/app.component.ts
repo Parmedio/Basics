@@ -10,12 +10,17 @@ export class AppComponent {
   doggo = 'https://fastly.picsum.photos/id/237/500/500.jpg?hmac=idOEkrJhLd7nEU5pNrAGCyJ6HHJdR_sit1qDt5J3Wo0';
   imageFullURL = '';
   currentDate = new Date();
+  cost = 5000;
+  temperature = 23.7;
+
   getName = () => {
     return "Crema solare";
   }
+
   changeImage = (e: KeyboardEvent) => {
     this.doggo = (e.target as HTMLInputElement).value
   }
+
   logImg = (e: string) => {
     this.imageFullURL = e;
   }

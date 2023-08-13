@@ -4,7 +4,7 @@
 <p>{{ title | titlecase }}</p>
 <p>{{ title}}</p>
 
-<panini [bubba]="doggo" (imgSelected)="logImg($event)">
+<panini [bubba]="doggo" [costoso]="cost" (imgSelected)="logImg($event)">
     <p>Some crazy shish</p>
 </panini>
 
@@ -14,3 +14,5 @@
 
 <p>current date is: ```{{currentDate}}```</p>
 <p>current date FORMATTED is: ```{{currentDate | date: 'd/MM/y'}}```</p>
+
+<p>current TEMPERATURE is {{temperature | number: '1.0-0'}}</p>
